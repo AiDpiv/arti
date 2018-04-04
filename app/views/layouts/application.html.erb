@@ -11,6 +11,8 @@
   </head>
   <body>
     <%= render 'shared/navigation' %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <div id="<%= controller.controller_name %>">
       <%= yield %>
     </div>
