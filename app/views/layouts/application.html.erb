@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ArtI</title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all',
-    'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application',
-    'data-turbolinks-track': 'reload' %>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+  <%= render 'shared/head' %>
   <body>
     <%= render 'shared/navigation' %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <div id="<%= controller.controller_name %>">
+    <%= render 'shared/alerts' %>
+    <div class='container' id="<%= controller.controller_name %>">
       <%= yield %>
     </div>
-    <%= render 'shared/footer' %>
-    <span class="border">border</span>
+    <div class="container border">
     <%= debug(params) if Rails.env.development? %>
+    </div>
+    <%= render 'shared/footer' %>
   </body>
 </html>

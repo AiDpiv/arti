@@ -1,4 +1,9 @@
 <footer class="footer bg-dark text-light">
-  its a footer fuck yeah!
-
+  <div class="container p-3">
+    <h5>Foter will be here</h5>
+    <%= link_to 'sing up', new_user_registration_path, class: 'px-2' %>
+    <%= link_to 'sing in', new_user_session_path, class: 'px-2' %>
+    <%= link_to 'sing out', destroy_user_session_path, class: 'px-2' %>
+    <!-- link_to 'aidpiv@gmail.com', 'mailto:aidpiv@gmail.com' -->
+  </div>
 </footer>
