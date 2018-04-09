@@ -19,8 +19,8 @@ default: &default
   encoding: unicode
   pool: 5
   timeout: 5000
-  username: arti
-  password: arti
+  username: aid
+  password: aid
 
 
 development:
