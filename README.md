@@ -1,6 +1,4 @@
-# ArtI
- 
-
+# ArtI  
 
 # READ ME
 
